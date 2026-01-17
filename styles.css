@@ -1,0 +1,124 @@
+/* My goal with this is to do the styling outside of the html all in this file as is common for modern websites */
+/*Reset browser defaults */
+
+body { /* Browsers often have their defaults for margin and padding and it is good to confirm I get it to display as I intend */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+#header {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+#header p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+#main-content {
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#main-content h2, #main-content h3 {
+    text-transform: uppercase; /* Makes all letters uppercase */
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+#main-content h4 {
+    margin-bottom: 0px;
+}
+
+#main-content h6 {
+    margin-bottom: 10px;
+}
+
+#main-content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.important { /* The "mantle" word */
+    color: red;
+    font-weight: bold;
+}
+
+#quiz-section { 
+    /* I found this to be the hardest conceptually and it took a lot of attempting 
+    my goal was to have the octopus quiz header and questions on the left, and the image on the right centered within the box*/
+    display: grid;
+    /* 2 columns, text and form in 1, image in 2 */
+    grid-template-columns: 1fr auto;
+    background-color: lightcyan;
+    border: 1px solid grey;
+    padding: 20px;
+    margin-top: 25px;
+
+}
+
+#quiz-section h2 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 0 30px 0;
+}
+
+#quiz-section img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    border: 4px solid blueviolet;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#quiz-section form input[type="text"] {
+    margin-bottom: 5px; 
+}
+
+#species-table {
+    margin: 0; /* This part is the only one that doesnt have the left margin/padding */
+    padding: 0 10px 30px 0;
+}
+
+#species-table h2 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+table {
+    background-color: white;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color:darkgray;
+    color: white;
+}
+
+#footer {
+    background-color: lightgray;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px; /* Screenshot had this part you can go past on the footer */
+    padding: 5px;
+}
