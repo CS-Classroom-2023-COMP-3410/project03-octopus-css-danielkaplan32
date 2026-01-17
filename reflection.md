@@ -1,0 +1,5 @@
+My personal goal for this project was to follow best practices in modern web development and keeping all the CSS in my styles file which I think was successful. By handling layout, spacing, colors, and typography entirely in CSS, I was able to keep separation for the HTML more semantic and focused on structure rather than how it looks. Using a reset for margins and padding helped make sure I had a consistent appearance across browsers and gave me greater control over the layout.
+
+One of the more challenging parts of this assignment was styling the quiz section. Conceptually, positioning the quiz text and form on the left while centering the image on the right required multiple attempts. The CSS Grid provided the flexibility I needed, by letting me define column structure and control how elements span rows and columns. This section helped me practice my understanding of grid layouts and when they are more appropriate than other layout methods.
+
+Overall, this project gave me more experience with CSS organization and techniques and I gained a better understanding of how CSS properties interact.
